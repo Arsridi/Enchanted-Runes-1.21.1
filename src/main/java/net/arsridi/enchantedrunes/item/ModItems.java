@@ -22,6 +22,7 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(RUNE_SLATE);
+            entries.add(ARCANE_RESIN);
         });
     }
 }
