@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "enchantedrunes",
+	"version": "${version}",
+	"name": "Enchanted Runes",
+	"description": "A mod that adds enchantment loadouts for tools & armor",
+	"authors": [
+		"Arsridi"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/enchantedrunes/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.arsridi.enchantedrunes.EnchantedRunes"
+		],
+		"fabric-datagen": [
+			"net.arsridi.enchantedrunes.EnchantedRunesDataGenerator"
+		],
+		"client": [
+			"net.arsridi.enchantedrunes.EnchantedRunesClient"
+		]
+	},
+	"mixins": [
+		"enchantedrunes.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
